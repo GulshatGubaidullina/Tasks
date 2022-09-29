@@ -43,16 +43,19 @@
 
 // Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.
 
-function pigIt(str) {
-	let arr = str.split(" ");
-	console.log(arr);
-	let newArr = arr.map(item => {
-		let temp = item[0];
-		item = item.slice(1,);
-		item = item + temp + "ay";
-		return item
-	})
-	return newArr.join(" ");
-}
+// function pigIt(str) {
+// 	let arr = str.split(" ");
+// 	let newArr = arr.map(item => {
+// 		if (item === "?" || item === "!") {
+// 			return item
+// 		} else {
+// 			let temp = item[0];
+// 			item = item.slice(1,);
+// 			item = item + temp + "ay";
+// 			return item
+// 		}
+// 	})
+// 	return newArr.join(" ");
+// }
 
-console.log(pigIt('O tempora o mores !'))
+// console.log(pigIt('Pig latin is cool'))
